@@ -19,7 +19,7 @@ updateTimer();
 
 const textTimer2 = document.querySelector(".timer2");
 const restartButton = document.querySelector(".restartButton");
-const message = document.querySelector(".message");
+
 
 let millisecondsLeft = 30000; 
 const interval = 10; 
@@ -35,7 +35,7 @@ function updateTimer2(){
   if (millisecondsLeft > 0) {
     millisecondsLeft -= interval;
     setTimeout(updateTimer2, interval);
-    
+
   } else {
     textTimer2.textContent = "Час вийшов";
   }
